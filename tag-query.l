@@ -5,7 +5,7 @@
 %}
 %option noyywrap
 %%
-
+--.+\n         ;
 [ \t\n]        ;
 \(             { return '('; }
 \)             { return ')'; }

@@ -1,0 +1,8 @@
+# Vim
+*.swp
+
+# Generated files
+qcc
+*.o
+lex.yy.c
+tag-query.tab.*

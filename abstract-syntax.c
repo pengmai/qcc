@@ -4,9 +4,11 @@
 #include <string.h>
 #include "abstract-syntax.h"
 
-void *checked_malloc(size_t size) {
+void *checked_malloc(size_t size)
+{
 	void *p = malloc(size);
-	if (!p) {
+	if (!p)
+	{
 		fprintf(stderr, "\nRan out of memory!\n");
 		exit(1);
 	}

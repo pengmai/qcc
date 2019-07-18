@@ -10,7 +10,8 @@ char TAGMAP[] = "tagmap";
 
 void generate_sql_helper(FILE *stream, Expr expr)
 {
-	switch (expr->type) {
+	switch (expr->type)
+	{
 		case Identifier:
 			fprintf(stream,
 					"SELECT DISTINCT m.id FROM %s m "
